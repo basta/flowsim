@@ -1,0 +1,19 @@
+[package]
+name = "flowsim"
+version = "0.1.0"
+authors = ["Ondřej Baštař <jsembasta@gmail.com>"]
+edition = "2018"
+publish = false
+
+[features]
+optimize = ["log/release_max_level_warn"]
+default = ["optimize"]
+
+[dependencies]
+env_logger = "0.7"
+log = "0.4"
+pixels = "*"
+winit = "*"
+winit_input_helper = "0.9"
+rand_distr = "0.4.0"
+rand = "*"
